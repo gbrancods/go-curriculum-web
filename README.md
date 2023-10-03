@@ -5,5 +5,5 @@ https://go-curriculum-web.onrender.com
 A html template project in Go, hosted on render. 
 
 Todos:
-[] PDF Download
-[] Add informations about experiences
+- [ ] PDF Download
+- [ ] Add informations about experiences
