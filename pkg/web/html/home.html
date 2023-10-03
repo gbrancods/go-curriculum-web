@@ -1,0 +1,56 @@
+{{define "content"}}
+<br>
+<div class="spc-btw">
+    <p class="subtitle">{{.Name}}</p>
+    <p class="subtitle">{{.Age}}</p>
+</div>
+
+
+<div class="wrapper-dashed">
+    <p>
+        {{.AboutProject}}
+    </p>
+</div>
+
+<div class="wrapper">
+
+    <p class="subtitle">About Me</p>
+
+    {{range .AboutMe}}
+    <li>
+        {{.}}
+    </li>
+    {{end}}
+
+    <br>
+    <p class="subtitle">Experiences</p>
+    {{range .Experiences}}
+    <div>
+        <p>
+            {{.BusinessName}} - {{.Vocation}}
+        </p>
+    </div>
+    <div>
+        <p>
+            {{.BeginAt}} - {{.EndAt}}
+        </p>
+    </div>
+    <br>
+    {{end}}
+
+    <p class="subtitle">Education</p>
+    {{range .Educations}}
+    <li>
+        {{.SchoolName}}
+    </li>
+    <li>
+        {{.Matery}}
+    </li>
+    <li>
+        <p>{{.BeginAt}} - {{.EndAt}}</p>
+    </li>
+    <br>
+    {{end}}
+
+</div>
+{{end}}

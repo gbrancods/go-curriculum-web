@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{.Title}}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    .navbar {
+      background-color: #eaffff;
+      border-bottom: solid 1px black;
+    }
+
+    body {
+      background-color: #ffffea;
+    }
+
+    .navbar-link.is-active,
+    .navbar-link:focus,
+    .navbar-link:focus-within,
+    .navbar-link:hover,
+    a.navbar-item.is-active,
+    a.navbar-item:focus,
+    a.navbar-item:focus-within,
+    a.navbar-item:hover {
+      color: #000000;
+      font-weight: bold;
+      background-color: #eaffff;
+    }
+
+    .subtitle,
+    p,
+    li {
+      color: #000000;
+    }
+
+    .wrapper-dashed {
+      margin: auto;
+      border: 1px dashed black;
+      padding: 1vh;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    .wrapper {
+      margin: auto;
+      padding: 2vh;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    .spc-btw {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    li {
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body class="">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <p class="subtitle">Go curriculum web</p>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://linkedin.com/in/igab-dev">
+          LinkedIn
+        </a>
+
+        <a class="navbar-item" href="https://wa.me/5517992053636?text=+Hi%2C+i+came+from+your+CV+in+Go">
+          Whatsapp
+        </a>
+
+        <a class="navbar-item" href="https://github.com/igab-dev/">
+          Github
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+
+    });
+  </script>
+  {{block "content" .}}{{end}}
+</body>
+
+</html>
