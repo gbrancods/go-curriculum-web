@@ -1,3 +1,3 @@
 module github.com/igab-dev/go-curriculum-web
 
-go 1.21.1
+go 1.20.5
