@@ -8,6 +8,6 @@ import (
 
 func HandleRequest() (err error) {
 	http.HandleFunc("/", handlers.Home)
-	err = http.ListenAndServe(":8082", nil)
+	err = http.ListenAndServe(":80", nil)
 	return
 }
