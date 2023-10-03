@@ -127,7 +127,7 @@ func Experiences() (experiences []Experience) {
 
 func AboutMe() (about string) {
 	about = "Technology lover, Linux enthusiast since 2014, " +
-		"3 and a half years of experience with IT infrastructures, bare-metal servers, hardware..." +
+		"3 and a half years of experience with IT infrastructures, bare-metal servers, hardware... " +
 		"2 years modeling and developing software in Go, main experience with APIs, knows Docker, Kubernetes, GCP VMs and routes, ec2i nstances and route 53, gitlab ci/cd, postgres cli and a few other things."
 	return
 }
