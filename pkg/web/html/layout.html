@@ -4,6 +4,7 @@
 <head>
   <title>{{.Title}}</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
     .navbar {
       background-color: #eaffff;
@@ -21,16 +22,24 @@
     a.navbar-item.is-active,
     a.navbar-item:focus,
     a.navbar-item:focus-within,
-    a.navbar-item:hover {
+    a.navbar-item:hover,
+    .button.is-primary:focus:not(:active) {
       color: #000000;
+      border-color: black;
       font-weight: bold;
       background-color: #eaffff;
     }
 
-    .subtitle,
     p,
     li {
       color: #000000;
+      font-size: x-large;
+    }
+
+
+    .subtitle {
+      color: #000000;
+      font-size: xx-large;
     }
 
     .wrapper-dashed {
@@ -58,6 +67,39 @@
 
     li {
       list-style: none;
+    }
+
+    .control {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .button.is-primary {
+      background-color: #ffffff00;
+      border-color: black;
+      color: #000;
+    }
+
+    .button.is-primary {
+      background-color: #00d1b200;
+      border-color: black;
+      color: black;
+    }
+
+    .button.is-primary.is-hovered,
+    .button.is-primary:hover {
+      background-color: black;
+      border-color: transparent;
+      color: #fff;
+    }
+
+    div#navbarBasicExample {
+      font-size: x-large;
+    }
+
+    span {
+      font-size: large;
     }
   </style>
 </head>
@@ -90,6 +132,24 @@
           Github
         </a>
 
+        <p class="control">
+          <a class="button is-primary" href="/static/gabriel_curriculum.pdf" target="_blank">
+            <span class="icon">
+              <i class="fas fa-download"></i>
+            </span>
+            <span>Download en-Us</span>
+          </a>
+        </p>
+
+        <p class="control">
+          <a class="button is-primary" href="/static/gabriel_curriculo.pdf" target="_blank">
+            <span class="icon">
+              <i class="fas fa-download"></i>
+            </span>
+            <span>Download pt-Br</span>
+          </a>
+        </p>
+
       </div>
     </div>
   </nav>
@@ -117,7 +177,8 @@
 
     });
   </script>
-  {{block "content" .}}{{end}}
+  {{block "content" .}}
+  {{end}}
 </body>
 
 </html>
