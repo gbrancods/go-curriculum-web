@@ -325,7 +325,6 @@ func Experiences(l string) (e []Experience) {
 	rosa.Duration = "5 meses"
 	rosa.Description = "Análise, gestão e manutenção da infraestrutura de T.I, redes e suporte ao usuário, matriz, " +
 		"filiais e empresas do grupo. (farmácias, clínica e indústria de fornos de cremação)"
-	//TODO retirar do curri fisico
 
 	var cofer Experience
 	cofer.BeginAt = "fev 2020 "
