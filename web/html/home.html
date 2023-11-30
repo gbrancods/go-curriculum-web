@@ -1,0 +1,64 @@
+{{define "content"}}
+<br>
+<div class="spc-btw">
+    <p class="subtitle">{{.Name}}</p>
+    <p>{{.SwitchLang}}</a></p>
+</div>
+
+
+<div class="wrapper-dashed">
+    <p>
+        {{.AboutProject}}
+    </p>
+</div>
+
+<div class="wrapper">
+
+    {{.AboutMe}}
+    
+    <br>
+    <br>
+
+    <p class="subtitle">{{.ExperienceTitle}}</p>
+    {{range .Experiences}}
+        <b>{{.BusinessName}}</b>
+        <p>{{.Vocation}}</p>
+        <p class="description">{{.Description}}</p>
+        <p>{{.BeginAt}} - {{.EndAt}} ({{.Duration}})</p>
+        <br>
+    {{end}}
+
+    <br>
+    <br>
+
+    <p class="subtitle">{{.EducationTitle}}</p>
+    {{range .Educations}}
+        <b>{{.SchoolName}}</b>
+        <p>{{.Matery}}</p>
+        <p class="description">{{.Description}}</p>
+        <p>{{.BeginAt}} - {{.EndAt}} ({{.Duration}})</p>
+        <br>
+    {{end}}
+
+    <br>
+    <br>
+
+    <p class="subtitle">{{.EventsTitle}}</p>
+    {{range .Events}}
+        <b>{{.Name}}</b>
+        <p>{{.Type}} ({{.Year}})</p>
+        <br>
+    {{end}}
+
+    <br>
+    <br>
+
+    <p class="subtitle">{{.ArticlesTitle}}</p>
+    {{range .Articles}}
+        <b>{{.Type}}</b>
+        <p>{{.Authors}}</p>
+        <p>{{.Name}} ({{.Year}})</p>
+        <br>
+    {{end}}
+
+{{end}}

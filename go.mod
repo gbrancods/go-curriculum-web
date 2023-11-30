@@ -1,4 +1,4 @@
-module github.com/igab-dev/go-curriculum-web
+module github.com/gbrancods/go-curriculum-web
 
 go 1.20
 

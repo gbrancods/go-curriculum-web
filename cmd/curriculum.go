@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/igab-dev/go-curriculum-web/pkg/router"
+	"github.com/gbrancods/go-curriculum-web/router"
 )
 
 func main() {

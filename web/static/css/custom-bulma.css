@@ -1,0 +1,91 @@
+.navbar {
+    background-color: #eaffff;
+    border-bottom: solid 1px black;
+  }
+
+  body {
+    background-color: #ffffea;
+  }
+
+  .navbar-link.is-active,
+  .navbar-link:focus,
+  .navbar-link:focus-within,
+  .navbar-link:hover,
+  a.navbar-item.is-active,
+  a.navbar-item:focus,
+  a.navbar-item:focus-within,
+  a.navbar-item:hover,
+  .button.is-primary:focus:not(:active) {
+    color: #000000;
+    border-color: black;
+    font-weight: bold;
+    background-color: #eaffff;
+  }
+
+  p,
+  b {
+    color: #000000;
+    font-size: x-large;
+  }
+
+
+  .subtitle {
+    color: #000000;
+    font-size: xx-large;
+  }
+
+  .wrapper-dashed {
+    margin: auto;
+    border: 1px dashed black;
+    padding: 1vh;
+    width: 90%;
+    max-width: 800px;
+  }
+
+  .wrapper {
+    margin: auto;
+    padding: 2vh;
+    width: 90%;
+    max-width: 800px;
+  }
+
+  .spc-btw {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .control {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .button.is-primary {
+    background-color: #ffffff00;
+    border-color: black;
+    color: #000;
+  }
+
+  .button.is-primary {
+    background-color: #00d1b200;
+    border-color: black;
+    color: black;
+  }
+
+  .button.is-primary.is-hovered,
+  .button.is-primary:hover {
+    background-color: black;
+    border-color: transparent;
+    color: #fff;
+  }
+
+  div#navbarBasicExample {
+    font-size: x-large;
+  }
+
+  .description {
+    font-size: larger;
+  }

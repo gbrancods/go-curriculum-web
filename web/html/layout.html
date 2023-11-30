@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{.Title}}</title>
+  <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/bulma.min.css">
+  <link rel="stylesheet" href="/static/css/custom-bulma.css">
+  <style>
+
+  </style>
+</head>
+
+<body class="">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <p class="subtitle">Go curriculum web</p>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+
+        <a class="navbar-item" href="https://linkedin.com/in/gbrancods">LinkedIn</a>
+
+        <a class="navbar-item" href="https://wa.me/5517992053636?text=+Hi%2C+i+came+from+your+CV+in+Go">Whatsapp</a>
+
+        <a class="navbar-item" href="https://github.com/gbrancods/">Github</a>
+
+        <a class="navbar-item" href="mailto:gbrancods@gmail.com">Email</a>
+
+        <!-- Needed update
+        <p class="control">
+          <a class="button is-primary" href="/static/gabriel_curriculum.pdf" target="_blank">
+            <span class="icon">
+              <i class="fas fa-download"></i>
+            </span>
+            <span>Download en-Us</span>
+          </a>
+        </p>
+
+        <p class="control">
+          <a class="button is-primary" href="/static/gabriel_curriculo.pdf" target="_blank">
+            <span class="icon">
+              <i class="fas fa-download"></i>
+            </span>
+            <span>Download pt-Br</span>
+          </a>
+        </p>
+        -->
+
+      </div>
+    </div>
+  </nav>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    });
+  </script>
+
+  {{block "content" .}}
+  {{end}}
+</body>
+
+</html>
